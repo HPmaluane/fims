@@ -122,11 +122,11 @@ DB_HOST=localhost
 DB_PORT=5432
 DB_NAME=fims_db
 DB_USER=postgres
-DB_PASSWORD=SUA_PASSWORD_AQUI
+DB_PASSWORD=PASSWORD
 
-JWT_SECRET=coloque_aqui_string_aleatoria_longa_64_chars
-JWT_EXPIRES_IN=15m
-JWT_REFRESH_SECRET=outra_string_aleatoria_diferente_64_chars
+JWT_SECRET=coloque_aqui_string
+JWT_EXPIRES_IN=15min
+JWT_REFRESH_SECRET=outra_string_aleatoria_diferente_chars
 JWT_REFRESH_EXPIRES_IN=7d
 
 CORS_ORIGIN=http://localhost:5173
