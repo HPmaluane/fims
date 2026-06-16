@@ -58,7 +58,7 @@ fims/
 
 ---
 
-## Setup Completo (passo a passo)
+## Setup Completo
 
 ### 1. Base de Dados
 
@@ -252,11 +252,11 @@ pending → in_progress → submitted → reviewed → closed
 
 ## Segurança
 
-- Passwords com **bcrypt** (custo 12)
-- **JWT** access token (15 min) + refresh token rotativo (7 dias)
-- **Rate limiting**: 200 req/15min geral, 20 req/15min em auth
+- Passwords com bcrypt
+- **JWT** access token
+- **Rate limiting**: 200
 - **Helmet** para headers HTTP seguros
 - **CORS** configurado com origin whitelist
-- **Auditoria** de todas as ações críticas em base de dados
-- Validação de dados com **express-validator**
-- Respostas padronizadas `{ success, message, data }`
+- **Auditoria** de todas as ações críticas
+- Validação de dados
+- Respostas padronizadas
