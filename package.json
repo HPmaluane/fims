@@ -1,0 +1,16 @@
+{
+  "name": "fims",
+  "version": "1.0.0",
+  "description": "FIMS - Facility Inspection Management System",
+  "private": true,
+  "scripts": {
+    "install:all": "npm install --prefix backend && npm install --prefix frontend",
+    "dev": "concurrently \"npm run dev --prefix backend\" \"npm run dev --prefix frontend\"",
+    "dev:backend":  "npm run dev --prefix backend",
+    "dev:frontend": "npm run dev --prefix frontend",
+    "db:setup": "psql -U postgres -d fims_db -f database/schema.sql && psql -U postgres -d fims_db -f database/seeds.sql"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
